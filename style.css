@@ -10,5 +10,9 @@ Text Domain: arcada-child-theme
 */
 
 .entry-title a {
-    color: navy !important;
+    color: navy ;
+}
+
+.content-area{
+    background-color: aquamarine;
 }
