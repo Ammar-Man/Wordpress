@@ -1,18 +1,14 @@
 /*
-Theme Name: Boss Theme
+Theme Name: Our child theme
 Theme URI: https://example.com
-description : Our awesom theme.
-Author: Ammar
-Author URI : https://arcada.fi
+description: Our awesome theme.
+Author: Arcada
+Author URI: https://arcada.fi
 Template: generatepress
-Version: 1.0
-Description: Cool theme
+Version: 2022.4.19
 Text Domain: arcada-child-theme
 */
 
-body {
-    font-family: sans-serif;
-}
 .entry-title a {
     color: navy !important;
 }
