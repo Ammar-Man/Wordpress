@@ -15,4 +15,50 @@ function arcada_content() {
 
 }
 // T.ex. körs vid "generate_after_content"
-add_action( 'generate_after_content', 'arcada_content', 10, 0 );
+ //add_action( 'generate_after_content', 'arcada_content', 10, 0 );
+
+function amppari_contact_page(){
+    global $post;
+    if($post->ID == 19){
+        echo "Work (".$post->ID.")";
+      } 
+     
+}
+function amppari_home_page(){
+    global $post;
+    if($post->ID == 27){
+        echo "Work (".$post->ID.")";
+      } 
+    
+}
+function amppari_blog_page(){
+    global $post;
+    if($post->ID == 29){
+        echo "Work (".$post->ID.")";
+      } 
+     
+}
+function amppari_aboute_page(){
+    global $post;
+    if($post->ID == 31){
+        echo "Work (".$post->ID.")";
+      } 
+     
+}
+function amppari_info_page(){
+    global $post;
+    if($post->ID == 46){
+        echo "Work (".$post->ID.")";
+      } 
+    
+}
+
+
+ function my_favicon_link() {
+}
+
+add_action( 'generate_after_content', 'amppari_contact_page' );
+add_action( 'generate_after_content', 'amppari_home_page' );
+add_action( 'generate_after_content', 'amppari_blog_page' );
+add_action( 'generate_after_content', 'amppari_aboute_page' );
+add_action( 'generate_after_content', 'amppari_info_page' );
