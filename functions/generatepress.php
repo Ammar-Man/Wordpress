@@ -21,6 +21,14 @@ function amppari_contact_page(){
     global $post;
     if($post->ID == 19){
         echo "Work (".$post->ID.")";
+        echo '
+        <p>Responsiv map</p>
+        <div class="map-responsive">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=24.963351488113407%2C60.19904589540361%2C24.967353343963627%2C60.20389775421609&amp;layer=mapnik&amp;marker=60.2014719144904%2C24.965352416038513"
+            style="border: 2px solid black"></iframe><br />
+        </div>';
+     
       } 
      
 }
@@ -28,9 +36,70 @@ function amppari_home_page(){
     global $post;
     if($post->ID == 27){
         echo "Work (".$post->ID.")";
+        echo '
+        <!-- gallary test start -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               
+    
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="../images/img_1.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Vanta GYM Club</h5>
+                        <p>Enjoy your time in vanta gym club !</p>
+                      </div>
+                </div>
+    
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../images/img_2.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Vanta GYM Club</h5>
+                      <p>Enjoy your time in vanta gym club !</p>
+                    </div>
+                </div>
+    
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../images/img_3.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Vanta GYM Club</h5>
+                        <p>Enjoy your time in vanta gym club !</p>
+                      </div>
+                </div>
+    
+               
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        ';
+
+        echo'
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        ';
       } 
     
 }
+
 function amppari_blog_page(){
     global $post;
     if($post->ID == 29){
@@ -49,13 +118,17 @@ function amppari_info_page(){
     global $post;
     if($post->ID == 46){
         echo "Work (".$post->ID.")";
+        echo '
+        <p>Responsiv map</p>
+        <div class="map-responsive">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=24.963351488113407%2C60.19904589540361%2C24.967353343963627%2C60.20389775421609&amp;layer=mapnik&amp;marker=60.2014719144904%2C24.965352416038513"
+            style="border: 2px solid black"></iframe><br />
+        </div>';
       } 
     
 }
 
-
- function my_favicon_link() {
-}
 
 add_action( 'generate_after_content', 'amppari_contact_page' );
 add_action( 'generate_after_content', 'amppari_home_page' );

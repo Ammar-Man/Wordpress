@@ -16,3 +16,36 @@ Text Domain: arcada-child-theme
 .content-area{
     background-color: #f7f8f9;
 }
+
+/*Create Responsive Google Maps on Any Website*/
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  
+  .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 70%;
+    width: 70%;
+    position: absolute;
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .map-responsive iframe {
+        left: 0;
+        top: 0;
+        height: 98%;
+        width: 98%;
+        position: absolute;
+      }
+}
+  
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
