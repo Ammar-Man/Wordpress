@@ -17,6 +17,14 @@ function arcada_content() {
 // T.ex. körs vid "generate_after_content"
  //add_action( 'generate_after_content', 'arcada_content', 10, 0 );
 
+//  Bootstrap css 
+echo'
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+';
+
+
 function amppari_contact_page(){
     global $post;
     if($post->ID == 19){
@@ -35,9 +43,9 @@ function amppari_contact_page(){
 function amppari_home_page(){
     global $post;
     if($post->ID == 27){
-        echo "Work (".$post->ID.")";
+       
         echo '
-        <!-- gallary test start -->
+        <!-- gallery test start -->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -84,6 +92,20 @@ function amppari_home_page(){
         </div>
         ';
 
+        echo '
+        <p>
+        Welcome to Vantaa Gym! <br>
+        Office open: <br>
+        Mon 9am to 11pm and 5pm to 8pm <br>
+
+        Tue 9: 00-11: 00 and 17: 00-20: 00 <br>
+        Wed 9: 00-11: 00 and 17: 00-20: 00 <br>
+        </p>
+    
+        
+        ';
+
+
         echo'
         
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -104,6 +126,7 @@ function amppari_blog_page(){
     global $post;
     if($post->ID == 29){
         echo "Work (".$post->ID.")";
+        echo '<img class="d-block w-100" src="../images/img_1.jpg" alt="First slide">';
       } 
      
 }
@@ -135,3 +158,4 @@ add_action( 'generate_after_content', 'amppari_home_page' );
 add_action( 'generate_after_content', 'amppari_blog_page' );
 add_action( 'generate_after_content', 'amppari_aboute_page' );
 add_action( 'generate_after_content', 'amppari_info_page' );
+
