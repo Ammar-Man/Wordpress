@@ -33,6 +33,10 @@ Text Domain: arcada-child-theme
     width: 70%;
     position: absolute;
   }
+  
+  .Gallery_text{
+    display:  none ;
+  }
 
   @media screen and (max-width: 600px) {
 
@@ -43,9 +47,87 @@ Text Domain: arcada-child-theme
         width: 98%;
         position: absolute;
       }
+      .Gallery_text{
+        display:  unset ;
+      }
 }
+
   
 
 .selector-for-some-widget {
     box-sizing: content-box;
   }
+
+  .bg-green {
+    background-color: #00ff55!important;
+}
+.bg-red {
+  background-color: #ff0000!important;
+
+}
+
+#warning{
+  display: none;
+
+}
+
+.warning{
+  display: unset;
+
+}
+
+.w3-red{
+  color : black!important;
+  background-color: red!important;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+/* lightbox Gallery css */
+.photo-gallery {
+  color:#313437;
+  /* background-color:#fff; */
+}
+
+.photo-gallery p {
+  color:#7d8285;
+}
+
+.photo-gallery h2 {
+  font-weight:bold;
+  margin-bottom:40px;
+  padding-top:40px;
+  color:inherit;
+}
+
+@media (max-width:767px) {
+  .photo-gallery h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+.photo-gallery .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto 40px;
+}
+
+.photo-gallery .intro p {
+  margin-bottom:0;
+}
+
+.photo-gallery .photos {
+  padding-bottom:20px;
+}
+
+.photo-gallery .item {
+  padding-bottom:30px;
+}
+
+.lb-outerContainer {
+  background-color: red;
+}
+
+
