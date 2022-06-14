@@ -239,6 +239,7 @@ function amppari_home_page(){
       
          echo '
          <hr>
+        
                 <!-- gallery test start -->
                 <div class="alert alert-light  " role="alert">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -279,126 +280,129 @@ function amppari_home_page(){
                     <span class="sr-only">Next</span>
                     </a>
                 </div>
+
                 <hr>
-                <div id="accordion">
-                    <div class="card text-black alert-light  ">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                            <button class="btn btn-danger" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                aria-controls="collapseOne">
-                            About Vantaa Gym Club!
-                            </button>
-                            </h5>
-                        </div>
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                            <div class="card-body  text-black">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100"
-                                    src="https://lh3.googleusercontent.com/c0covZlYNj42KyaMHufBJV2MI33MwNOlwIL_x_G6Hg0Q_MQx-tNwbTT9DaFhGEYoUHtFxhpqe_FKlKyZISIT3HJgxKcyET6kbutgVNo=s755"
-                                    alt="Third slide" alt="First slide">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <div style="background-color: #00000061; border-radius: 5px;">
-                                        <h5 style="color:red;"><b>About Vantaa Gym Club!</b></h5>
-                                        <p  >
-                                        Vantaa Gym Club is a family business that has been operating in Havukoski,
-                                        Vantaa for 20 years. Our bright and airy facilities provide fitness for all levels
-                                        and ages.
-                                        Modern equipment and professional guidance make training safe and effective.
-                                        You will also find gym programs and personal training services through us.
-                                        The warm atmosphere and plenty of performance points guarantee a comfortable gym
-                                        experience
-                                        for both beginners and long-time enthusiasts.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="Gallery_text text_black">
-                                <h5 style="color:red;"><b style="color:black;">About Vantaa Gym Club!</b></h5>
-                                <p style="color:black;">
-                                    Vantaa Gym Club is a family business that has been operating in Havukoski,
-                                    Vantaa for 20 years. Our bright and airy facilities provide fitness for all levels and ages.
-                                    Modern equipment and professional guidance make training safe and effective.
-                                    You will also find gym programs and personal training services through us.
-                                    The warm atmosphere and plenty of performance points guarantee a comfortable gym experience
-                                    for both beginners and long-time enthusiasts.
-                                </p>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="card text-black alert-light ">
-                            <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                                <button class="btn btn-danger collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                                    aria-expanded="false" aria-controls="collapseTwo">
-                                Opening Time:
-                                </button>
-                            </h5>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body">
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100"
-                                        src="https://lh3.googleusercontent.com/c0covZlYNj42KyaMHufBJV2MI33MwNOlwIL_x_G6Hg0Q_MQx-tNwbTT9DaFhGEYoUHtFxhpqe_FKlKyZISIT3HJgxKcyET6kbutgVNo=s755"
-                                        alt="Third slide" alt="First slide">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <div style="background-color: #00000061; border-radius: 5px;">
-                                        <h5 style="color:red;"> <b>Opening time</b></h5>
-                                        <p> Ma 9.00-11.00 ja 17.00-20.00 <br>
-                                            Ti 9.00-11.00 ja 17.00-20.00 <br>
-                                            Ke 9.00-11.00 ja 17.00-20.00 <br>
-                                        </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="Gallery_text">
-                                    <h5 style="color:red;"> <b style="color:black;">Opening time</b></h5>
-                                    <p style="color:black;"> Ma 9.00-11.00 ja 17.00-20.00 <br>
-                                        Ti 9.00-11.00 ja 17.00-20.00 <br>
-                                        Ke 9.00-11.00 ja 17.00-20.00 <br>
-                                    </p>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="card text-black alert-light ">
-                            <div class="card-header" id="headingThree">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-danger collapsed" data-toggle="collapse" data-target="#collapseThree"
-                                        aria-expanded="false" aria-controls="collapseThree">
-                                    MORE ABOUT OUR FACILITIES
+               
+                        <div id="accordion">
+                            <div class="card text-black alert-dark  ">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                    <button class="btn btn-danger" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                    About Vantaa Gym Club!
                                     </button>
-                                </h5>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                <div class="card-body">
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body  text-black">
                                     <div class="carousel-item active">
                                         <img class="d-block w-100"
-                                        src="https://lh3.googleusercontent.com/s-xiHFA1s7YR9-li94S0Rx6Ar1oX2Ma_88NUaNPJqmZvHe8xng31GflutB67bs3IQLqLP6V5ghjqqZ0H0zt56nhSODWmK7CYM9C2kZg=s1600"
-                                        alt="Third slide" alt="First slide">
+                                            src="https://lh3.googleusercontent.com/c0covZlYNj42KyaMHufBJV2MI33MwNOlwIL_x_G6Hg0Q_MQx-tNwbTT9DaFhGEYoUHtFxhpqe_FKlKyZISIT3HJgxKcyET6kbutgVNo=s755"
+                                            alt="Third slide" alt="First slide">
                                         <div class="carousel-caption d-none d-md-block">
-                                        <div style="background-color: #00000061; border-radius: 5px;">
-                                            <h5 style="color:red;"> <b>FIND OUT ABOUT OUR FACILITIES</b></h5>
-                                            <p>
+                                            <div style="background-color: #00000061; border-radius: 5px;">
+                                                <h5 style="color:red;"><b>About Vantaa Gym Club!</b></h5>
+                                                <p  >
+                                                Vantaa Gym Club is a family business that has been operating in Havukoski,
+                                                Vantaa for 20 years. Our bright and airy facilities provide fitness for all levels
+                                                and ages.
+                                                Modern equipment and professional guidance make training safe and effective.
+                                                You will also find gym programs and personal training services through us.
+                                                The warm atmosphere and plenty of performance points guarantee a comfortable gym
+                                                experience
+                                                for both beginners and long-time enthusiasts.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Gallery_text text_black">
+                                        <h5 style="color:red;"><b style="color:black;">About Vantaa Gym Club!</b></h5>
+                                        <p style="color:black;">
+                                            Vantaa Gym Club is a family business that has been operating in Havukoski,
+                                            Vantaa for 20 years. Our bright and airy facilities provide fitness for all levels and ages.
+                                            Modern equipment and professional guidance make training safe and effective.
+                                            You will also find gym programs and personal training services through us.
+                                            The warm atmosphere and plenty of performance points guarantee a comfortable gym experience
+                                            for both beginners and long-time enthusiasts.
+                                        </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="card text-black alert-dark ">
+                                    <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-danger collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                        Opening Time:
+                                        </button>
+                                    </h5>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100"
+                                                src="https://lh3.googleusercontent.com/c0covZlYNj42KyaMHufBJV2MI33MwNOlwIL_x_G6Hg0Q_MQx-tNwbTT9DaFhGEYoUHtFxhpqe_FKlKyZISIT3HJgxKcyET6kbutgVNo=s755"
+                                                alt="Third slide" alt="First slide">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <div style="background-color: #00000061; border-radius: 5px;">
+                                                <h5 style="color:red;"> <b>Opening time</b></h5>
+                                                <p> Ma 9.00-11.00 ja 17.00-20.00 <br>
+                                                    Ti 9.00-11.00 ja 17.00-20.00 <br>
+                                                    Ke 9.00-11.00 ja 17.00-20.00 <br>
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Gallery_text">
+                                            <h5 style="color:red;"> <b style="color:black;">Opening time</b></h5>
+                                            <p style="color:black;"> Ma 9.00-11.00 ja 17.00-20.00 <br>
+                                                Ti 9.00-11.00 ja 17.00-20.00 <br>
+                                                Ke 9.00-11.00 ja 17.00-20.00 <br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="card text-black alert-dark ">
+                                    <div class="card-header" id="headingThree">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-danger collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                            MORE ABOUT OUR FACILITIES
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <div class="carousel-item active">
+                                                <img class="d-block w-100"
+                                                src="https://lh3.googleusercontent.com/s-xiHFA1s7YR9-li94S0Rx6Ar1oX2Ma_88NUaNPJqmZvHe8xng31GflutB67bs3IQLqLP6V5ghjqqZ0H0zt56nhSODWmK7CYM9C2kZg=s1600"
+                                                alt="Third slide" alt="First slide">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                <div style="background-color: #00000061; border-radius: 5px;">
+                                                    <h5 style="color:red;"> <b>FIND OUT ABOUT OUR FACILITIES</b></h5>
+                                                    <p>
+                                                        NOIN 150 TREENIPISTETTÄ <br>
+                                                        YLI 40000 KG RAUTAA <br>
+                                                        YHTEENSÄ 800 NELIÖTÄ <br>
+                                                    </p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            <div class="Gallery_text">
+                                                <h5 style="color:red;"> <b style="color:black;">FIND OUT ABOUT OUR FACILITIES</b></h5>
+                                                <p style="color:black;">
                                                 NOIN 150 TREENIPISTETTÄ <br>
                                                 YLI 40000 KG RAUTAA <br>
                                                 YHTEENSÄ 800 NELIÖTÄ <br>
-                                            </p>
-                                        </div>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="Gallery_text">
-                                        <h5 style="color:red;"> <b style="color:black;">FIND OUT ABOUT OUR FACILITIES</b></h5>
-                                        <p style="color:black;">
-                                        NOIN 150 TREENIPISTETTÄ <br>
-                                        YLI 40000 KG RAUTAA <br>
-                                        YHTEENSÄ 800 NELIÖTÄ <br>
-                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            </div>
                         </div>
-                    </div>
-                </div>
+                   
                 </div>
              ';
         echo'
