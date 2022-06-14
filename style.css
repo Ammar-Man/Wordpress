@@ -9,6 +9,8 @@ Version: 2022.4.19
 Text Domain: arcada-child-theme
 */
 
+
+
 .entry-title a {
     color: navy ;
 }
@@ -32,6 +34,7 @@ Text Domain: arcada-child-theme
     height: 70%;
     width: 70%;
     position: absolute;
+    border-radius: 10px;
   }
   
   .Gallery_text{
@@ -46,6 +49,7 @@ Text Domain: arcada-child-theme
         height: 98%;
         width: 98%;
         position: absolute;
+        border-radius: 10px;
       }
       .Gallery_text{
         display:  unset ;
@@ -88,6 +92,10 @@ Text Domain: arcada-child-theme
   color:#313437;
   /* background-color:#fff; */
 }
+.photo-gallery .photos {
+  padding-bottom: 20px;
+  background: #d6d8d9;
+}
 
 .photo-gallery p {
   color:#7d8285;
@@ -100,11 +108,18 @@ Text Domain: arcada-child-theme
   color:inherit;
 }
 
+.smallFooter{display: none;}
 @media (max-width:767px) {
   .photo-gallery h2 {
     margin-bottom:25px;
     padding-top:25px;
     font-size:24px;
+  }
+  .bigFooter{
+    display: none ;
+  }
+  .smallFooter{
+    display: unset;
   }
 }
 
@@ -131,3 +146,93 @@ Text Domain: arcada-child-theme
 }
 
 
+#page.site.grid-container.container.hfeed{
+  padding: 0 !important;
+}
+
+ion-icon {
+  --ionicon-stroke-width: 16px;
+}
+/* The float CSS property */
+
+ .footer-bar{display:  unset !important;} 
+
+.copyright-bar{display:  unset !important;}
+/* .footer-bar-active{display:  unset ;}
+  .footer-bar-align-left{display:  unset ;} */
+
+  .topImg{   
+     background-color: #00000061;
+   
+    border-radius: 10px;
+  }
+  img{
+    border-radius: 10px;
+  }
+
+  .separate-containers .inside-article{
+    padding: 0px !important;
+  }
+
+
+  b{
+    color : white;
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 5px;
+  }
+  
+  .main-nav{
+    text-decoration-line: underline;
+    text-decoration-color: #BF1F1F;
+    text-decoration-thickness: 5px;
+  
+  }
+ 
+
+
+  .content-area{background-color: white;
+/*   
+    background-color: #f8d7da;
+    border-color: #f5c6cb; */
+  
+  }
+
+ .site-info{
+  display: none!important;
+ }
+
+ 
+element.style {
+}
+.comment-content {
+    padding: 30px;
+    
+    background: white;
+    border-color: black;
+    border-width: 1px;
+}
+
+textarea.form-control input[type=text]:focus {
+  background-color: white;
+}
+
+
+.one-container .site-content {
+  padding: 0px;
+}
+/* textarea.form-control {
+  background-color: #f5c6cb;
+} */
+
+.inside-article{
+  color: #818182;
+  background-color: #fefefe;
+  border-color: #fdfdfe;
+
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
