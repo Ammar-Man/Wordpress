@@ -10,7 +10,9 @@ add_filter('generate_post_author_output', function($output) {
 // T.ex. körs vid "generate_after_content"
 
 //w3css.css
-echo'<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">';
+echo'<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" href="https://cgi.arcada.fi/~almandaa/2022/P4/CMS/Projekt2/wordpress/wp-content/uploads/2022/06/cropped-logoleft.png">
+';
 
 //  Bootstrap css 
 echo'
