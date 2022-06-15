@@ -23,7 +23,7 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
 //Lightbox Gallery
 echo'
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/style.css" >
+ <link rel="stylesheet" href="assets/css/style.css" >
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
 ';
 
@@ -54,6 +54,7 @@ function galleryHTML(){
     <hr>
     <div class="alert alert-dark" role="alert">
     <h4 class="alert-heading">Vantaa Gym Club Gallery</h4>
+    <hr>
     <div class="photo-gallery">
        <div class="container">
           <div class="row photos">
@@ -78,6 +79,7 @@ function galleryHTML(){
           </div>
        </div>
     </div>
+    <hr>
     </div>
  </div>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -505,6 +507,16 @@ function amppari_footer_page(){
     
 }
 
+
+function amppari_toDo_page(){
+    global $post;
+    if($post->ID == 128){
+        toDoPageHTML();
+
+      } 
+    
+}
+
 function amppari_gallery_page(){
     global $post;
     if($post->ID == 46){
@@ -575,13 +587,88 @@ function test_input($data){
 }
 
 
+function toDoPageHTML(){
+    echo'
+    <hr>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <div class="alert alert-dark" role="alert">
+
+        <a class="setting btn-outline-dark" style="padding-bottom: 6px; padding-top: 10px;">
+        <img src="https://img.icons8.com/external-justicon-lineal-justicon/32/undefined/external-setting-notifications-justicon-lineal-justicon.png" />
+        </a>
+        <!-- My to Do list -->
+        <h4 class="alert-heading">To Do List</h4>
+       
+        <div id="warningText2" class="w3-panel w3-red w3-display-container  rounded">
+      <span onclick="warningOn2()" class="w3-button w3-large w3-display-topright rounded">&times;</span>
+      Please enter your information!
+      </div>
+
+        <!-- <span > <button class="btn btn-dark" >"You must write something!"</button> </span> -->
+
+        <div class="alert alert-light  " role="alert"> 
+
+            <nav class="navbar navbar-light">
+                <form class="form-inline">
+                <select name="pref" class="custom-select" id="myDate">
+                    <option value="DESC">First</option>
+                    <option value="ASC">Last</option>
+                </select>
+                
+ 
+                    <span id="btnDateShow"  class="input-group-text " >Date:</span>
+                
+                <button id="btnDate" class="btn btn-outline-danger my-2 my-sm-0" type="button">Button</button>
+                </form>
+            </nav>
+                 
+
+                <nav class="navbar navbar-light">
+                    <form class="form-inline">
+                        <select name="pref" class="custom-select" id="mySelect">
+                            <option value="1">Chest</option>
+                            <option value="2">Back</option>
+                            <option value="3">Arms</option>
+                            <option value="4">Shoulders</option>
+                            <option value="5">Legs</option>
+                            <option value="6">Rest</option>
+                        </select>
+                        <input type="text" id="myInput" class="form-control mr-sm-2" type="search" placeholder="Text..." aria-label="Search">
+                        <button id="addInfo" class="btn btn-outline-danger my-2 my-sm-0" type="button"> Add </button>
+                    </form>
+                </nav>
+            
+        </div>
+        <ul id="myUL" class="listEdit">
+        </ul>
+        <!-- api content coming here -->
+            <div style="display:none;">
+                <div id="ip_api"></div>
+                <div id="weather_api"></div>
+                <div id="extra_api"></div>
+                <div class="container2 ">
+                    <h2> Api to database:</h2>
+                    <p>Password from lockalstorgae:</p>
+                    <p id="userOutPut"> *******</p>
+                </div>
+            </div>
+    </div>
+    
+        <!-- the end of webb -->
+       
+        <script src="../scripts.js"></script>
+    ';
+}
+
 
 
 add_action( 'generate_after_content', 'amppari_contact_page' );
 add_action( 'generate_after_content', 'amppari_home_page' );
-
+add_action( 'generate_after_content', 'amppari_toDo_page' );
  add_action( 'wp_footer', 'amppari_blog_page' );
 add_action( 'generate_after_content','amppari_gallery_page' );
+
 
 // Script here!
 echo'
@@ -596,7 +683,7 @@ echo'
  if($post->ID == 19){
     sleep(1);
  }
- sleep(1);
+//  sleep(1);
  
  
 function pageRestart(){
@@ -604,6 +691,8 @@ function pageRestart(){
    location.replace("./?page_id=19");
    </script>';
 }
+
+
 
 ?>
 
@@ -616,3 +705,4 @@ Day 4: Shoulders + (Heavy) Triceps.
 Day 5: Legs + (Heavy) Biceps.
 Day 6: Rest (Light core workout as an option)
 -->
+

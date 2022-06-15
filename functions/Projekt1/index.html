@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Amppari</title>
+   <link rel="stylesheet" href="../../style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     
+
+</head>
+
+<body>
+   <div class="container">
+      <!--here is my svg logo-->
+      <div class="navbar">
+         <a  href="#"><i class="fa fa-fw fa-home"></i> Amppari</a>
+         <a  href="./cms_projekt1.pdf" target="_blank" ><i class="fa fa-fw fa-home"></i> PDF</a>
+         <a class="setting" style="padding-bottom: 6px; padding-top: 10px;">
+            <img
+               src="https://img.icons8.com/external-justicon-lineal-color-justicon/32/000000/external-setting-notifications-justicon-lineal-color-justicon.png" />
+         </a>
+      </div>
+     
+    
+      
+      <div class="separator"> </div>
+      <div class="bigboss">
+         <!-- Api to databse info -->
+      
+         
+         <!-- </div> -->
+         
+         <!-- My to Do list -->
+         <div class="container2 ">
+            <h2>My To Do List</h2>
+            <div class="warning">
+               <div class="w3-panel w3-red w3-display-container" onclick="this.parentElement.style.display='none'">
+                  <span class="w3-button w3-large w3-display-topright">×</span>
+                  <p>You must write something!</p>
+               </div>
+            </div>
+            <!-- <span > <button class="buttonM" >"You must write something!"</button> </span> -->
+            <select name="pref" class="buttonM" id="myDate">
+               <option value="DESC">First</option>
+               <option value="ASC">Last</option>
+            </select>
+            <button id="btnDate" type="button" class="addBtn">Search</button>
+            <span id="btnDateShow" class="buttonM">Date: </span>
+            <div id="myDIV" class="header">
+               <input type="text" id="myInput" placeholder="Title...">
+               <select name="pref" class="buttonM" id="mySelect">
+                  <option value="1">Chest</option>
+                  <option value="2">Back</option>
+                  <option value="3">Arms</option>
+                  <option value="4">Shoulders</option>
+                  <option value="5">Legs</option>
+                  <option value="6">Rest</option>
+               </select>
+               <button id="addInfo" type="button" class="addBtn">Add</button>
+            </div>
+            <ul id="myUL">
+            </ul>
+         </div>
+      </div>
+      <!-- api content coming here -->
+      <div class="bigboss">
+         <div id="ip_api"></div>
+         <div id="weather_api"></div>
+         <div id="extra_api"></div>
+         <div class="container2 ">
+            <h2> Api to database:</h2>
+            <p>Password from lockalstorgae:</p>
+            <p id="userOutPut"> *******</p>
+         </div>
+      </div>
+   
+   </div>
+   <!-- the end of webb -->
+   <script src="./toDoScript.js"></script>
+   <script src="./javascript.js"></script>
+</body>
+
+</html>
