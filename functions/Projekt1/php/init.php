@@ -33,10 +33,7 @@ function create_conn()
     // byt error reporting läge
     mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_INDEX);
     //Databaskonfiguration
-    $servername = "localhost";
-    $username = "almandaa";
-    $password = "8PEsQB5PYL";
-    $dbname = "almandaa";
+    
     
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
